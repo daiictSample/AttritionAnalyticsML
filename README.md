@@ -9,11 +9,21 @@ This project uses machine learning to predict employee attrition based on HR dat
 
 ## Files
 
-- **logit_resample.ipynb**  
-  Logistic Regression with data resampling, preprocessing, and evaluation.
+## Approach 1: Logistic Regression with Resampling
 
-- **Random_forest.ipynb**  
-  Random Forest implementation, feature importance, and performance analysis.
+- Used to establish a baseline for attrition prediction.
+- Addressed class imbalance using SMOTE.
+- Preprocessed data with label encoding and feature scaling.
+- Evaluated with accuracy, precision, recall, and ROC-AUC.
+- Key finding: [e.g., Overtime and JobSatisfaction were strong predictors.]
+
+## Approach 2: Random Forest Classifier
+
+- Chosen for its ability to handle non-linear relationships and feature importance analysis.
+- Used same preprocessing as above.
+- Tuned number of trees and max depth for best performance.
+- Achieved higher accuracy and recall than logistic regression.
+- Top features: [e.g., Age, MonthlyIncome, Overtime.]
 
 ## How to Run
 
